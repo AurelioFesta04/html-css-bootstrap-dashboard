@@ -50,21 +50,22 @@
                 <div class="row d-flex justify-content-between">
                     <div class="col-6">
                         <label class="form-label" for="nome">Nome Autore</label>
-                        <input class="form-control" type="text" id="nome" name="nome">
+                        <input class="form-control" type="text" placeholder="Inserisci nome dell'Autore" id="nome" name="nome">
                     </div>
                     <div class="col-6">
                         <label class="form-label" for="cognome">Cognome Autore</label>
-                        <input class="form-control" type="text" id="cognome" name="cognome">
+                        <input class="form-control" type="text" placeholder="Inserisci cognome dell'Autore" id="cognome" name="cognome">
                     </div>
                 </div>
                 <div>
                     <label class="form-label" for="titolo">Titolo</label>
-                    <input class="form-control" type="text" id="titolo" name="titolo">
+                    <input class="form-control" type="text" placeholder="Inserisci il titolo del libro" id="titolo" name="titolo">
                 </div>
                 <div class="row d-flex flex-column flex-lg-row gap-3 gap-lg-0">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 dropdown">
                         <label class="form-label" for="gender">Genere</label>
                         <select class="form-control" name="gender" id="gender">
+                            <option value="scegli il genere">Scegli il genere</option>
                             <option value="maschio">maschio</option>
                             <option value="femmina">femmina</option>
                             <option value="sumero">sumero</option>
@@ -77,13 +78,13 @@
                     </div>
                     <div class="col-lg-4">
                         <label class="form-label" for="isbn">ISBN#</label>
-                        <input class="form-control" type="number" id="isbn" name="isbn">
+                        <input class="form-control" type="number" placeholder="inserisci il codice ISBN#" id="isbn" name="isbn">
                     </div>
                 </div>
                 <hr>
                 <div>
                     <label class="form-label" for="textarea">Note</label>
-                    <textarea class="form-control" id="textarea" name="textarea" rows="" cols=""></textarea>
+                    <textarea class="form-control" id="textarea" placeholder="inserisci eventuali note sul libro" name="textarea" rows="" cols=""></textarea>
                 </div>
                 <div class="d-flex flex-column gap-3">
                     <div>
